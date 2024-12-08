@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skills & Languages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo" class="logo-image">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="skills-section">
+        <h1>Skills & Languages</h1>
+        <p class="description">
+            Add a brief description or tagline about your skills and proficiencies here.
+        </p>
+
+        <div class="skills-container">
+            <div class="skill-box">
+                <h2>Front End Development</h2>
+                <ul>
+                    <li>HTML <span class="progress"><span style="width: 85%"></span></span></li>
+                    <li>CSS <span class="progress"><span style="width: 85%"></span></span></li>
+                    <li>JavaScript <span class="progress"><span style="width: 80%"></span></span></li>
+                    <li>PHP <span class="progress"><span style="width: 75%"></span></span></li>
+                    <li>WordPress <span class="progress"><span style="width: 70%"></span></span></li>
+                </ul>
+            </div>
+
+            <div class="skill-box">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Hindi <span class="progress"><span style="width: 90%"></span></span></li>
+                    <li>English <span class="progress"><span style="width: 85%"></span></span></li>
+                </ul>
+            </div>
+
+            <div class="skill-box">
+                <h2>Back End Development</h2>
+                <ul>
+                    <li>Node.js <span class="progress"><span style="width: 80%"></span></span></li>
+                    <li>SQL <span class="progress"><span style="width: 85%"></span></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="add-skill-button">
+            <button id="openModal">Add Skill</button>
+        </div>
+      
+    </section>
+    <footer>
+        <div class="footer-container">
+            <!-- Horizontal Logos (Centered at the top) -->
+            <div class="horizontal-logos">
+                <div class="logo-item">
+                    <img src="logo1.png" alt="Logo 1">
+                </div>
+                <div class="logo-item">
+                    <img src="logo2.png" alt="Logo 2">
+                </div>
+                <div class="logo-item">
+                    <img src="logo3.png" alt="Logo 3">
+                </div>
+                <div class="logo-item">
+                    <img src="logo4.png" alt="Logo 4">
+                </div>
+            </div>
+    
+            <!-- Vertical Logos (Left-Aligned) -->
+            <div class="vertical-logos">
+                <div class="logo-item">
+                    <img src="logos1.png" alt="Logo 1">
+                </div>
+                <div class="logo-item">
+                    <img src="logos2.png" alt="Logo 2">
+                    <p>4.5/5 Rating On Lorem</p>
+                </div>
+                <div class="logo-item">
+                    <img src="logos3.png" alt="Logo 3">
+                    <p>8/10 Rating On Ipsum</p>
+                </div>
+                <div class="logo-item">
+                    <img src="logos4.png" alt="Logo 4">
+                    <p>4.5/5 Rating On Dorel</p>
+                </div>
+            </div>
+    
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Recommendations</a></li>
+                    </ul>
+                </div>
+                <div class="portfolio-links">
+                    <h3>Portfolio</h3>
+                    <ul>
+                        <li><a href="#">Frontend Development</a></li>
+                        <li><a href="#">Backend Development</a></li>
+                        <li><a href="#">Website Design</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Problem Solving & DSA</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#"><img src="linkedin.png" alt="LinkedIn"></a></li>
+                        <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Copyright, All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Modal Form for Adding Skill -->
+    <div id="addSkillModal" class="modal">
+        <div class="modal-content">
+            <h2>Add Skill</h2>
+            <form id="skillForm">
+                <label for="domain">Domain</label>
+                <input type="text" id="domain" name="domain" placeholder="Front End Developer" required>
+
+                <label for="skill1">Skills</label>
+                <div class="skills-input">
+                    <input type="text" id="skill1" name="skill1" placeholder="Skill" required>
+                    <input type="number" id="proficiency1" name="proficiency1" placeholder="Proficiency (%)" min="0" max="100" required>
+                </div>
+                <div class="skills-input">
+                    <input type="text" id="skill2" name="skill2" placeholder="Skill">
+                    <input type="number" id="proficiency2" name="proficiency2" placeholder="Proficiency (%)" min="0" max="100">
+                </div>
+                <div class="skills-input">
+                    <input type="text" id="skill3" name="skill3" placeholder="Skill">
+                    <input type="number" id="proficiency3" name="proficiency3" placeholder="Proficiency (%)" min="0" max="100">
+                </div>
+
+                <div class="modal-buttons">
+                    <button type="submit" class="add-skill-btn">Add Skill</button>
+                    <button type="button" id="cancelBtn" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
